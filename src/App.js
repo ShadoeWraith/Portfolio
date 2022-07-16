@@ -1,21 +1,14 @@
 import { useState, useEffect } from 'react';
 import GridLoader from 'react-spinners/GridLoader';
-import Nav from './components/Nav';
 import DotNav from './components/DotNav';
 import Home from './components/Home';
 import About from './components/About';
+import Projects from './components/Projects';
+import Resume from './components/Resume';
 import Contact from './components/Contact';
 
 export default function App() {
   const [loading, setLoading] = useState(false);
-  const [categories] = useState([
-    { name: 'About' },
-    { name: 'Projects' },
-    { name: 'Resume' },
-    { name: 'Contact' },
-  ]);
-
-  const [currentCategory, setcurrentCategory] = useState(categories[0]);
 
   useEffect(() => {
     setLoading(true);
@@ -31,14 +24,11 @@ export default function App() {
         </div>
       ) : (
         <div>
-          <Nav />
-          <DotNav
-            categories={categories}
-            setcurrentCategory={setcurrentCategory}
-            currentCategory={currentCategory}
-          />
+          <DotNav />
           <Home />
           <About />
+          <Projects />
+          <Resume />
           <Contact />
         </div>
       )}

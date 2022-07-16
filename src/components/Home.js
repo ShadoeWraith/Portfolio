@@ -1,6 +1,5 @@
 import arrow from '../assets/Arrow.jpg';
-import { motion, useCycle } from 'framer-motion';
-import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   const bounceTransition = {
@@ -20,21 +19,39 @@ export default function Home() {
   };
 
   return (
-    <div className="section-home">
-      <div className="section-header">
-        <h1>Shaun Kiszonas</h1>
-      </div>
-      <motion.a className="arrow" href="#about">
-        <motion.img
-          src={arrow}
-          alt="down arrow"
-          transition={bounceTransition}
-          animate={{
-            y: ['-100%', '-80%'],
-          }}
-          whileHover={{}}
-        />
-      </motion.a>
+    <div className="section-home" id="home">
+      <motion.div
+        className="section-header"
+        initial={{ y: '-5vh' }}
+        animate={{ y: 0 }}
+        transition={{ type: 'spring', duration: 1, bounce: 0.2 }}
+      >
+        <h1>
+          My Name Is
+          <span>Shaun</span>{' '}
+        </h1>
+        <h2>
+          And I Am A <span>Full Stack Web Developer</span>
+        </h2>
+      </motion.div>
+      <motion.div
+        className="arrow"
+        initial={{ y: '13vh' }}
+        animate={{ y: 0 }}
+        transition={{ type: 'spring', duration: 1, bounce: 0.2 }}
+      >
+        <motion.a href="#about">
+          <motion.img
+            src={arrow}
+            alt="down arrow"
+            transition={bounceTransition}
+            animate={{
+              y: ['-100%', '-80%'],
+            }}
+            whileHover={{}}
+          />
+        </motion.a>
+      </motion.div>
     </div>
   );
 }

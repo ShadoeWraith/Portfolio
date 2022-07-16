@@ -51,69 +51,6 @@ body {
   height: 100vh
 }
 
-.nav {
-  display: flex;
-  justify-content: center;
-}
-
-.nav-header {
-  font-size: 4em;
-  padding: 0 50px;
-  text-shadow: 3px 3px var(--black);
-}
-
-.nav-number {
-  color: var(--primaryColor);
-}
-
-.nav-buttons {
-  cursor: pointer;
-  list-style: none;
-  display: flex;
-  font-size: 2em;
-}
-
-.nav-buttons li {
-  display: inline-block;
-  padding: 0 5px;
-}
-
-.nav-buttons li:hover {
-  color: var(--black)
-}
-
-.resume-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.resume-button button {
-  font-size: 1em;
-  border-radius: 15px;
-  border: none;
-}
-
-a {
-  text-decoration: none;
-  position: relative;
-  color: var(--textColor);
-  padding: 0 10px;
-  text-shadow: 3px 3px var(--black);
-}
-
-.nav-anchor:after{
-  content: "";
-  position: absolute;
-  background-color: var(--secondaryColor);
-  box-shadow: 1px 1px 1px var(--black);
-  height: 5px;
-  width: 0;
-  left: 0;
-  bottom: -10px;
-  transition: 0.3s;
-}
-
 .dot-nav {
   position: fixed;
   right: 20px;
@@ -168,10 +105,6 @@ a {
   transform-origin: 100% 50%;
 }
 
-.isActive {
-  opacity: 100;
-}
-
 .not-shown {
   opacity: 0;
 }
@@ -181,14 +114,33 @@ a {
 }
 
 .section-home {
-  justify-content: center;
-  height: 100vh;
-  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.section-home span {
+  display: flex;
+  font-size: 2em;
+  text-decoration: underline
+}
+
+.section-home span:hover {
+  color: var(--secondaryColor);
 }
 
 .section-header h1{
   text-shadow: 2px 2px 2px var(--black);
+}
+
+.section-header h2{
+  align-items: center;
+  text-shadow: 2px 2px 2px var(--black);
+}
+
+.section-header a:hover {
+  color: var(--secondaryColor)
 }
 
 .arrow{
