@@ -1,5 +1,6 @@
 import arrow from '../assets/Arrow.jpg';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 export default function Home() {
   const bounceTransition = {
@@ -38,7 +39,7 @@ export default function Home() {
         className="arrow"
         initial={{ y: '13vh' }}
         animate={{ y: 0 }}
-        transition={{ type: 'spring', duration: 1, bounce: 0.2 }}
+        transition={{ type: 'spring', duration: 2, bounce: 0.2 }}
       >
         <motion.a href="#about">
           <motion.img

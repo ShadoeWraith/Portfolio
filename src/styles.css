@@ -35,6 +35,8 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 600;
   background-image: linear-gradient(to bottom right, var(--secondaryColor), var(--tertiaryColor));
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -65,6 +67,7 @@ body {
   position: relative;
   list-style: none;
   text-align: right;
+  margin: -25px 5px
 }
 
 .dot-nav a {
@@ -73,9 +76,9 @@ body {
 
 .dot-nav .dot {
   position: relative;
-  top: 7px;
-  height: 25px;
-  width: 25px;
+  top: 23px;
+  height: 27px;
+  width: 27px;
   border-radius: 50%;
   background: rgba(255,255,255,.25);
   transition: transform .2s,background-color .5s;
@@ -97,9 +100,9 @@ body {
   top: 3px;
   padding: 0.4em 0.5em;
   color: #f2f2f2;
-  font-family: Gotham,Helvetica,Arial,sans-serif;
-  font-size: 1.2em;
-  font-weight: 500;
+  font-size: 2em;
+  text-shadow: 1px 1px var(--black);
+  font-weight: 700;
   text-transform: uppercase;
   transition: transform .2s,opacity .2s;
   transform-origin: 100% 50%;
@@ -109,8 +112,21 @@ body {
   opacity: 0;
 }
 
-.nav-anchor:hover:after{
-  width: 100%;
+.section {
+  padding: 15px;
+  background-color: var(--primaryColor);
+  color: var(--black);
+  margin: 100px 175px;
+  border-radius: 25px;
+}
+
+.section-header {
+  font-size: 1.5em;
+}
+
+.section-content {
+  font-size: 1.75em;
+  display: flex;
 }
 
 .section-home {
@@ -123,24 +139,16 @@ body {
 .section-home span {
   display: flex;
   font-size: 2em;
-  text-decoration: underline
+  width: fit-content;
 }
 
-.section-home span:hover {
-  color: var(--secondaryColor);
+.section-home h1{
+  text-shadow: 3px 3px 3px var(--black);
 }
 
-.section-header h1{
-  text-shadow: 2px 2px 2px var(--black);
-}
-
-.section-header h2{
+.section-home h2{
   align-items: center;
-  text-shadow: 2px 2px 2px var(--black);
-}
-
-.section-header a:hover {
-  color: var(--secondaryColor)
+  text-shadow: 3px 3px 3px var(--black);
 }
 
 .arrow{
@@ -157,25 +165,4 @@ body {
 
 .arrow img:hover {
   filter: invert(64%) sepia(14%) saturate(2048%) hue-rotate(162deg) brightness(86%) contrast(89%);
-}
-
-.section {
-  padding: 15px;
-  background-color: var(--primaryColor);
-  color: var(--black);
-  margin: 100px 150px;
-  border-radius: 25px;
-}
-
-.section-header {
-  font-size: 1.5em;
-}
-
-.section-content {
-  font-size: 1.75em;
-  display: flex;
-  margin: auto;
-}
-
-.section-form {
 }
