@@ -208,5 +208,5 @@ body {
 }
 
 .footer-content img:hover {
-  filter: invert(0%) sepia(0%) saturate(7486%) hue-rotate(340deg) brightness(99%) contrast(106%);
+  filter: invert(64%) sepia(14%) saturate(2048%) hue-rotate(162deg) brightness(86%) contrast(89%);
 }

@@ -7,7 +7,7 @@ export default function DotNav(props) {
 
   const isSelected = () => {
     const scrollvalue = document.documentElement.scrollTop;
-    if (scrollvalue > 700) {
+    if (scrollvalue > 625) {
       setVisible(true);
     } else {
       setVisible(false);
