@@ -113,15 +113,12 @@ body {
   padding: 0.4em 0.5em;
   color: #f2f2f2;
   font-size: 2em;
+  opacity: 0;
   text-shadow: 1px 1px var(--black);
   font-weight: 700;
   text-transform: uppercase;
   transition: transform .2s,opacity .2s;
   transform-origin: 100% 50%;
-}
-
-.is-active {
-  opacity: 100;
 }
 
 .is-active .dot{
@@ -135,7 +132,6 @@ body {
 .dot-container:hover .dot-label {
   opacity: 100;
 }
-
 
 .section {
   padding: 15px;
@@ -156,7 +152,7 @@ body {
 
 .sub-section-header::after{
   content: '';
-  height: 2px;
+  height: 3px;
   width: 50%;
   background-color: var(--secondaryColor);
   position: absolute;
@@ -165,7 +161,7 @@ body {
 }
 .section:nth-child(odd) .sub-section-header::after{
   content: '';
-  height: 2px;
+  height: 3px;
   width: 50%;
   background-color: var(--tertiaryColor);
   position: absolute;
