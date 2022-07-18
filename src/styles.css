@@ -47,7 +47,7 @@ body {
 }
 
 .loading {
-  background-image: linear-gradient(to bottom right, var(--secondaryColor), var(--tertiaryColor));
+  background-image: linear-gradient(45deg, var(--secondaryColor), var(--tertiaryColor));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,7 +145,32 @@ body {
 }
 
 .section-header {
+  font-size: 1.5em
+}
+
+.sub-section-header {
   font-size: 1.5em;
+  position: relative;
+  display: inline-block;
+}
+
+.sub-section-header::after{
+  content: '';
+  height: 2px;
+  width: 50%;
+  background-color: var(--secondaryColor);
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+}
+.section:nth-child(odd) .sub-section-header::after{
+  content: '';
+  height: 2px;
+  width: 50%;
+  background-color: var(--tertiaryColor);
+  position: absolute;
+  left: 0;
+  bottom: 25px;
 }
 
 .section-content {
