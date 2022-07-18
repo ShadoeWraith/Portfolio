@@ -3,12 +3,12 @@
 }
 
 :root {
- 
   --primaryColor: #DDD5D0;
   --secondaryColor: #449DD1;
   --tertiaryColor: #9E5CC1;
   --textColor: #ffffff;
   --black: #090B0C;
+  --sectionBG: #ddd5d01a;
 }
 
 ::-webkit-scrollbar {
@@ -53,6 +53,17 @@ body {
   height: 100vh
 }
 
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-color: var(--primaryColor);
+  transform-origin: 0%;
+  z-index: 10;
+}
+
 .dot-nav {
   position: fixed;
   right: 20px;
@@ -67,7 +78,8 @@ body {
   position: relative;
   list-style: none;
   text-align: right;
-  margin: -25px 5px
+  height: 40px;
+  margin: 0 5px
 }
 
 .dot-nav a {
@@ -76,7 +88,7 @@ body {
 
 .dot-nav .dot {
   position: relative;
-  top: 23px;
+  top: 22px;
   height: 27px;
   width: 27px;
   border-radius: 50%;
@@ -85,9 +97,8 @@ body {
   transform-origin: 50% 50%;
 }
 
-.dot-nav .dot:hover{
+.dot-nav a:hover .dot{
   background-color: var(--secondaryColor);
-  opacity: 100;
 }
 
 .dot-nav a span {
@@ -108,13 +119,26 @@ body {
   transform-origin: 100% 50%;
 }
 
-.not-shown {
+.is-active {
+  opacity: 100;
+}
+
+.is-active .dot{
+  background-color: var(--secondaryColor);
+}
+
+.not-active .dot-label{
   opacity: 0;
 }
 
+.dot-container:hover .dot-label {
+  opacity: 100;
+}
+
+
 .section {
   padding: 15px;
-  background-color: var(--primaryColor);
+  background-color: var(--sectionBG);
   color: var(--black);
   margin: 100px 175px;
   border-radius: 25px;

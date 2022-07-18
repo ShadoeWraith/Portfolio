@@ -1,6 +1,5 @@
 import arrow from '../assets/Arrow.jpg';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 
 export default function Home() {
   const bounceTransition = {
@@ -21,25 +20,28 @@ export default function Home() {
 
   return (
     <div className="section-home" id="home">
-      <motion.div
-        className="section-header"
-        initial={{ y: '-5vh' }}
-        animate={{ y: 0 }}
-        transition={{ type: 'spring', duration: 1, bounce: 0.2 }}
-      >
-        <h1>
+      <div className="section-header">
+        <motion.h1
+          initial={{ y: '-100vh' }}
+          animate={{ y: 0 }}
+          transition={{ type: 'spring', duration: 1, bounce: 0.2 }}
+        >
           My Name Is
           <span>Shaun</span>{' '}
-        </h1>
-        <h2>
+        </motion.h1>
+        <motion.h2
+          initial={{ x: '-200vh' }}
+          animate={{ x: 0 }}
+          transition={{ type: 'spring', delay: 1, duration: 1, bounce: 0.2 }}
+        >
           And I Am A <span>Full Stack Web Developer</span>
-        </h2>
-      </motion.div>
+        </motion.h2>
+      </div>
       <motion.div
         className="arrow"
         initial={{ y: '13vh' }}
         animate={{ y: 0 }}
-        transition={{ type: 'spring', duration: 2, bounce: 0.2 }}
+        transition={{ type: 'spring', delay: 1.75, duration: 2, bounce: 0.2 }}
       >
         <motion.a href="#about">
           <motion.img

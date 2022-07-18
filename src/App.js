@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import GridLoader from 'react-spinners/GridLoader';
+import ProgressBar from './components/ProgressBar';
 import DotNav from './components/DotNav';
 import Home from './components/Home';
 import About from './components/About';
@@ -9,6 +10,14 @@ import Contact from './components/Contact';
 
 export default function App() {
   const [loading, setLoading] = useState(false);
+  const [categories] = useState([
+    { name: 'home' },
+    { name: 'about' },
+    { name: 'projects' },
+    { name: 'resume' },
+    { name: 'contact' },
+  ]);
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   useEffect(() => {
     setLoading(true);
@@ -24,7 +33,12 @@ export default function App() {
         </div>
       ) : (
         <div>
-          <DotNav />
+          <ProgressBar />
+          <DotNav
+            categories={categories}
+            currentCategory={currentCategory}
+            setCurrentCategory={setCurrentCategory}
+          />
           <Home />
           <About />
           <Projects />
