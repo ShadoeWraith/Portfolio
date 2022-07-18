@@ -7,6 +7,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 export default function App() {
   const [loading, setLoading] = useState(false);
@@ -44,6 +45,7 @@ export default function App() {
           <Projects />
           <Resume />
           <Contact />
+          <Footer />
         </div>
       )}
     </div>

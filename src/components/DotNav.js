@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 export default function DotNav(props) {
   const { categories = [], currentCategory, setCurrentCategory } = props;
-  const [isHover, setIsHover] = useState(false);
 
   const [visible, setVisible] = useState(false);
 

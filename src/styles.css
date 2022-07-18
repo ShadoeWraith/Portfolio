@@ -4,11 +4,11 @@
 
 :root {
   --primaryColor: #DDD5D0;
+  --sectionBG: #1b1b1b;
   --secondaryColor: #449DD1;
   --tertiaryColor: #9E5CC1;
   --textColor: #ffffff;
   --black: #090B0C;
-  --sectionBG: #ddd5d01a;
 }
 
 ::-webkit-scrollbar {
@@ -36,8 +36,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Source Code Pro', monospace;
+  background-color: var(--sectionBG);
   font-weight: 600;
-  background-image: linear-gradient(to bottom right, var(--secondaryColor), var(--tertiaryColor));
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: var(--textColor);
@@ -47,6 +47,7 @@ body {
 }
 
 .loading {
+  background-image: linear-gradient(to bottom right, var(--secondaryColor), var(--tertiaryColor));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,8 +139,7 @@ body {
 
 .section {
   padding: 15px;
-  background-color: var(--sectionBG);
-  color: var(--black);
+  color: var(--primaryColor);
   margin: 100px 175px;
   border-radius: 25px;
 }
@@ -154,6 +154,7 @@ body {
 }
 
 .section-home {
+  background-image: linear-gradient(45deg, var(--secondaryColor), var(--tertiaryColor));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,4 +190,23 @@ body {
 
 .arrow img:hover {
   filter: invert(64%) sepia(14%) saturate(2048%) hue-rotate(162deg) brightness(86%) contrast(89%);
+}
+
+.footer {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-image: linear-gradient(45deg, var(--secondaryColor), var(--tertiaryColor));
+}
+
+.footer-content img{
+  filter: invert(91%) sepia(9%) saturate(157%) hue-rotate(340deg) brightness(94%) contrast(92%);
+  margin: 0 25px;
+}
+
+.footer-content img:hover {
+  filter: invert(0%) sepia(0%) saturate(7486%) hue-rotate(340deg) brightness(99%) contrast(106%);
 }
