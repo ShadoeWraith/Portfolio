@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.479ed60c.css",
-    "main.js": "/Portfolio/static/js/main.82746a9c.js",
+    "main.css": "/Portfolio/static/css/main.4450397a.css",
+    "main.js": "/Portfolio/static/js/main.b1e71d2f.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Picture.jpg": "/Portfolio/static/media/Picture.a92765d3498ae1ef09b2.jpg",
+    "static/media/CounselorReservation.jpg": "/Portfolio/static/media/CounselorReservation.eac1e056cc3451986876.jpg",
+    "static/media/ParkPlace.jpg": "/Portfolio/static/media/ParkPlace.20280303e0f560a91450.jpg",
+    "static/media/AirPollution.jpg": "/Portfolio/static/media/AirPollution.68744d9c27854770ca23.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.479ed60c.css.map": "/Portfolio/static/css/main.479ed60c.css.map",
-    "main.82746a9c.js.map": "/Portfolio/static/js/main.82746a9c.js.map",
+    "main.4450397a.css.map": "/Portfolio/static/css/main.4450397a.css.map",
+    "main.b1e71d2f.js.map": "/Portfolio/static/js/main.b1e71d2f.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.479ed60c.css",
-    "static/js/main.82746a9c.js"
+    "static/css/main.4450397a.css",
+    "static/js/main.b1e71d2f.js"
   ]
 }
