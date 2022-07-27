@@ -251,20 +251,20 @@ body {
   margin: 0 40px;
   border: 3px solid var(--secondaryColor);
   transition: 1s;
-  opacity: 20%;
   border-radius: 10px;
-}
-
-.card:hover{
-  opacity: 100%;
-  transition: 1s;
 }
 
 .card-title {
   color: var(--sectionBG);
+  height: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  font-size: 1.5vw;
   margin: 0;
   padding: 15px;
+  opacity: 75%;
   background-image: linear-gradient(45deg, var(--secondaryColor), var(--tertiaryColor));
   border-top-left-radius: 5px;  
   border-top-right-radius: 5px;  
@@ -272,13 +272,104 @@ body {
 
 .image-container {
   display: flex;
-  
+  opacity: 20%;
+  transition: 1s;
+}
+
+.image-container:hover {
+  opacity: 100%;
+  transition: 1s;
 }
 
 .image-container .card-image{
   width: 400px;
-  height: 300px;
+  height: 350px;
   object-fit: fill;
+}
+
+.resume {
+  display: flex;
+  margin: auto;;
+}
+
+.card-footer {
+  background-image: linear-gradient(45deg, var(--secondaryColor), var(--tertiaryColor));
+  width: 400px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  opacity: 75%;
+}
+
+.card-footer img {
+  filter: invert(91%) sepia(9%) saturate(157%) hue-rotate(340deg) brightness(94%) contrast(92%);
+  padding: 4px 8px;
+}
+
+.card-footer img:hover {
+  filter: invert(64%) sepia(14%) saturate(2048%) hue-rotate(162deg) brightness(86%) contrast(89%);
+}
+
+.contact-form {
+  display: flex;
+}
+
+.contact-form div {
+  padding: 10px 0
+}
+
+label {
+  width: 120px;
+  display: inline-block;
+}
+
+input {
+  background-color: var(--primaryColor);
+  outline: none;
+  border: 2px solid var(--tertiaryColor);
+}
+
+input:focus {
+  background-color: var(--textColor);
+}
+
+iframe {
+  width: 750px;
+  height: 500px;
+}
+
+textarea {
+  background-color: var(--primaryColor);
+  outline: none;
+  border: 2px solid var(--tertiaryColor);
+}
+
+textarea:focus {
+  background-color: var(--textColor);
+}
+
+button {
+  margin: 0 120px;
+  width: 120px;
+  height: 25px;
+  border: 2px solid var(--tertiaryColor);
+  border-radius: 10px;
+  background-color: var(--primaryColor);
+  transition: .5s;
+}
+
+button:hover {
+  background-color: var(--tertiaryColor);
+  transition: .5s;
+}
+
+.contact-textarea {
+  display: flex;
+}
+
+.contact-textarea textarea{
+  width: 350px;
+  height: 150px;
 }
 
 .arrow{

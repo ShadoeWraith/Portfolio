@@ -7,8 +7,7 @@ export default function Projects() {
         <h2>Projects</h2>
       </div>
       <div className="section-content">
-        <div className="card-container">
-          <Card />
+        <div>
           <Card />
         </div>
       </div>
