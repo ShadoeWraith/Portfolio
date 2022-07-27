@@ -133,11 +133,16 @@ body {
   opacity: 100;
 }
 
+.dot-label {
+  opacity: 100;
+}
+
 .section {
   padding: 15px;
   color: var(--primaryColor);
   margin: 100px 175px;
   border-radius: 25px;
+  font-size: 1.5em;
 }
 
 .section-header {
@@ -172,10 +177,36 @@ body {
 .section-content {
   font-size: 1.75em;
   display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      var(--secondaryColor),
+      var(--tertiaryColor)
+    ) 1 100%;
+}
+
+.section:nth-child(odd) .section-content {
+  border-image: 
+  linear-gradient(
+    to bottom, 
+    var(--tertiaryColor),
+    var(--secondaryColor)
+  ) 1 100%;
+}
+
+.section-content p {
+  max-width: 75%;
 }
 
 .section-home {
-  background-image: linear-gradient(45deg, var(--secondaryColor), var(--tertiaryColor));
+  background-image: linear-gradient(
+    45deg, 
+    var(--secondaryColor), 
+    var(--tertiaryColor));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,6 +226,59 @@ body {
 .section-home h2{
   align-items: center;
   text-shadow: 3px 3px 3px var(--black);
+}
+
+.section-content .about-pic {
+  width: 20%;
+  height: 20%;
+  border-radius: 100%;
+  border-image: ;
+  opacity: 20%;
+  transition: 1s;
+}
+
+.section-content .about-pic:hover {
+  transition: 1s;
+  opacity: 100%;
+}
+
+.card-container {
+  display: flex;
+}
+
+.card {
+  max-width: 400px;
+  margin: 0 40px;
+  border: 3px solid var(--secondaryColor);
+  transition: 1s;
+  opacity: 20%;
+  border-radius: 10px;
+}
+
+.card:hover{
+  opacity: 100%;
+  transition: 1s;
+}
+
+.card-title {
+  color: var(--sectionBG);
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+  background-image: linear-gradient(45deg, var(--secondaryColor), var(--tertiaryColor));
+  border-top-left-radius: 5px;  
+  border-top-right-radius: 5px;  
+}
+
+.image-container {
+  display: flex;
+  
+}
+
+.image-container .card-image{
+  width: 400px;
+  height: 300px;
+  object-fit: fill;
 }
 
 .arrow{
