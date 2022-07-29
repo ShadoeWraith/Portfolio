@@ -65,7 +65,7 @@ export default function Card() {
             <a href="https://github.com/Callank21/group-project">
               <img className="card-icon" src={github} alt="github" />
             </a>
-            <a href="https://callank21.github.io/group-project/index.html">
+            <a href="https://mern-school-website.herokuapp.com/">
               <img className="card-icon" src={deploy} alt="github" />
             </a>
           </div>
