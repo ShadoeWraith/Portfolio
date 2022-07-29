@@ -23,6 +23,6 @@ export const ProjectData = [
     title: 'Counselor Reservation',
     image: CounselorReservation,
     gitHub: 'https://github.com/uhMammoth/school-website',
-    deployed: '/',
+    deployed: 'https://mern-school-website.herokuapp.com/',
   },
 ];
