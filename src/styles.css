@@ -244,12 +244,13 @@ body {
 
 .card-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .card {
   max-width: 400px;
-  margin: 0 40px;
+  margin: 20px 40px;
   border: 3px solid var(--secondaryColor);
   transition: 1s;
   border-radius: 10px;
@@ -406,4 +407,11 @@ button:hover {
 
 .footer-content img:hover {
   filter: invert(64%) sepia(14%) saturate(2048%) hue-rotate(162deg) brightness(86%) contrast(89%);
+}
+
+@media (max-width: 1200px) {
+  iframe {
+    width: 500px;
+    height: 500px;
+  }
 }
