@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.419c6b56.css",
-    "main.js": "/Portfolio/static/js/main.dbb8c8ef.js",
+    "main.js": "/Portfolio/static/js/main.41510f60.js",
     "static/media/tranquility.jpg": "/Portfolio/static/media/tranquility.5e3bae3207d6419f3c0c.jpg",
     "static/media/Picture.jpg": "/Portfolio/static/media/Picture.a92765d3498ae1ef09b2.jpg",
     "static/media/CounselorReservation.jpg": "/Portfolio/static/media/CounselorReservation.eac1e056cc3451986876.jpg",
@@ -9,10 +9,10 @@
     "static/media/AirPollution.jpg": "/Portfolio/static/media/AirPollution.68744d9c27854770ca23.jpg",
     "index.html": "/Portfolio/index.html",
     "main.419c6b56.css.map": "/Portfolio/static/css/main.419c6b56.css.map",
-    "main.dbb8c8ef.js.map": "/Portfolio/static/js/main.dbb8c8ef.js.map"
+    "main.41510f60.js.map": "/Portfolio/static/js/main.41510f60.js.map"
   },
   "entrypoints": [
     "static/css/main.419c6b56.css",
-    "static/js/main.dbb8c8ef.js"
+    "static/js/main.41510f60.js"
   ]
 }

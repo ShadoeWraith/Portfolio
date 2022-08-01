@@ -11,8 +11,8 @@ export default function Card() {
     {
       title: 'Air Quality',
       image: AirPollution,
-      github: 'https://callank21.github.io/group-project/index.html',
-      deployed: 'https://github.com/Callank21/group-project',
+      github: 'https://github.com/Callank21/group-project',
+      deployed: 'https://callank21.github.io/group-project/index.html',
     },
     {
       title: 'Park Place',
